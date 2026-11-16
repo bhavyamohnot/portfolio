@@ -11,7 +11,7 @@ window.CONFIG = {
   resume: "assets/Bhavya_Mohnot_Resume.pdf",
   // Contact form: paste your free Web3Forms access key here (web3forms.com).
   // Left empty, the form opens the visitor's email app instead.
-  web3formsKey: "",
+  web3formsKey: "81414c2a-33f6-49a6-8677-f9cb387a2d6c",
 };
 
 window.PROJECTS = [
