@@ -1,5 +1,7 @@
 # Bhavya Mohnot · Portfolio
 
+**Live:** https://bhavya-mohnot.vercel.app
+
 An interactive portfolio built around one idea: **I debug products like machines.**
 The site starts as an engineering blueprint; the **Render** switch turns the drawing into the finished product.
 
