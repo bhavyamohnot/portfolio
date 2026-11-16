@@ -562,7 +562,7 @@
     .replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
     .replace(/^\s*[*-]\s+/gm, "• ")
     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-    .replace(/(?<![="'>])(https?:\/\/[^\s)<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
+    .replace(/(?<![="'>])(https?:\/\/[^\s)<]*[^\s)<.,;:!?])/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
     .replace(/(?<![:\w.+-])([\w.+-]+@[\w-]+\.[a-z]{2,})(?![^<]*<\/a>)/gi, '<a href="mailto:$1">$1</a>');
   function addMsg(who, text, cls = "") {
     const d = document.createElement("div");
