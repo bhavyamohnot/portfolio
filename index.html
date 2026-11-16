@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" data-theme="blueprint">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhavya Mohnot · Aspiring Product Manager</title>
+<meta name="description" content="Bhavya Mohnot: mechanical engineer and physicist (BITS Pilani Goa) building toward Product Management. AI Feedback Analyst, TradeLens, Olist, Starbucks and WhatsApp Pay case studies.">
+<meta name="theme-color" content="#0a2140">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a2140'/%3E%3Cpath d='M4 8h24M4 16h24M4 24h24M8 4v24M16 4v24M24 4v24' stroke='%236db3ff' stroke-opacity='.25'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%23e8f1fb'%3EBM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bhavya Mohnot · Aspiring Product Manager">
+<meta property="og:description" content="I debug products like machines. 5 spec sheets: AI, analytics, fintech and strategy.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+  // Apply the saved theme before first paint (no flash).
+  // ?view=render or ?view=blueprint in the URL wins (handy for sharing a specific look).
+  try {
+    const q = new URLSearchParams(location.search).get("view");
+    const t = q === "render" ? "product" : q === "blueprint" ? "blueprint" : localStorage.getItem("bm-theme");
+    if (t === "product" || t === "blueprint") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to the work</a>
+
+<div class="ruler" aria-hidden="true"><div class="ruler-fill" id="rulerFill"></div></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Bhavya Mohnot, back to top">
+    <span class="logo-mark">BM</span><span class="logo-name">Bhavya Mohnot</span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#work" data-nav="work">Work</a>
+    <a href="#experience" data-nav="experience">Experience</a>
+    <a href="#toolkit" data-nav="toolkit">Toolkit</a>
+    <a href="#about" data-nav="about">About</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button class="kbd-btn" id="cmdkBtn" aria-label="Open command menu"><span class="k">Ctrl</span><span class="k">K</span></button>
+    <button class="mode" id="modeBtn" aria-label="Switch between blueprint and rendered view">
+      <span class="mode-opt" data-m="blueprint">Blueprint</span><span class="mode-opt" data-m="product">Render</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ═════════════ 01 · HERO ═════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-guides" aria-hidden="true"><i class="gx" id="gx"></i><i class="gy" id="gy"></i><span class="gxy" id="gxy">x 000 · y 000</span></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker mono">DWG NO. BM-2027 · SHEET 01 OF 06</p>
+        <p class="hello">Hi, I'm <b>Bhavya Mohnot</b>, an aspiring Product Manager.</p>
+        <h1 class="h1">I debug products<br>like <span class="mark">machines.</span></h1>
+        <p class="lede">Mechanical engineer &amp; physicist at BITS Pilani Goa. I find the failing part, measure it, and ship the fix, from scooter assembly lines at Honda to an LLM pipeline that read <b>4,108 app reviews</b>.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">Inspect the work <span aria-hidden="true">↓</span></a>
+          <a class="btn" id="heroResume" href="assets/Bhavya_Mohnot_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+          <button class="btn btn-ghost" data-open-chat>Ask my AI twin <span class="dot-live" aria-hidden="true"></span></button>
+        </div>
+      </div>
+
+      <figure class="hero-art" aria-label="A technical drawing of a gear driving a phone app: discover, prioritize, ship">
+        <svg id="heroSvg" viewBox="0 0 540 460" role="img">
+          <title>Engineering drawing: gears turning into a product</title>
+          <!-- dimension line on top -->
+          <g class="dim draw-g">
+            <path class="draw" pathLength="1" d="M250 26 V44 M430 26 V44 M256 34 H424"/>
+            <path class="draw" pathLength="1" d="M256 34 l8 -4 v8 z M424 34 l-8 -4 v8 z"/>
+          </g>
+          <text class="anno" x="340" y="22" text-anchor="middle">USER-CENTRED · 1:1</text>
+
+          <!-- phone -->
+          <g class="phone">
+            <rect class="draw part" pathLength="1" x="250" y="52" width="180" height="340" rx="26"/>
+            <rect class="draw screen" pathLength="1" x="262" y="78" width="156" height="290" rx="10"/>
+            <path class="draw" pathLength="1" d="M318 64 H362"/>
+            <!-- header -->
+            <rect class="draw fill-a" pathLength="1" x="276" y="94" width="90" height="10" rx="3"/>
+            <rect class="draw fill-m" pathLength="1" x="276" y="110" width="56" height="6" rx="3"/>
+            <!-- chart -->
+            <rect class="draw card" pathLength="1" x="276" y="128" width="128" height="92" rx="8"/>
+            <rect class="draw bar b1" pathLength="1" x="292" y="168" width="14" height="40" rx="2"/>
+            <rect class="draw bar b2" pathLength="1" x="314" y="150" width="14" height="58" rx="2"/>
+            <rect class="draw bar b3" pathLength="1" x="336" y="184" width="14" height="24" rx="2"/>
+            <rect class="draw bar b4" pathLength="1" x="358" y="194" width="14" height="14" rx="2"/>
+            <!-- list -->
+            <rect class="draw card" pathLength="1" x="276" y="232" width="128" height="34" rx="8"/>
+            <rect class="draw card" pathLength="1" x="276" y="274" width="128" height="34" rx="8"/>
+            <circle class="draw fill-m" pathLength="1" cx="292" cy="249" r="7"/>
+            <circle class="draw fill-m" pathLength="1" cx="292" cy="291" r="7"/>
+            <path class="draw" pathLength="1" d="M306 245 H380 M306 253 H354 M306 287 H372 M306 295 H346"/>
+            <!-- ship button -->
+            <rect class="draw ship" pathLength="1" x="276" y="322" width="128" height="30" rx="15"/>
+            <text class="ship-t" x="340" y="341" text-anchor="middle">SHIP IT</text>
+          </g>
+
+          <!-- vertical dimension -->
+          <g class="dim">
+            <path class="draw" pathLength="1" d="M442 52 H462 M442 392 H462 M454 58 V386"/>
+            <path class="draw" pathLength="1" d="M454 58 l-4 8 h8 z M454 386 l-4 -8 h8 z"/>
+          </g>
+          <text class="anno" x="472" y="226" transform="rotate(90 472 226)" text-anchor="middle">DATA → DECISION</text>
+
+          <!-- gears -->
+          <g id="gearBig" class="gear" tabindex="0" role="button" aria-label="Spin the gear">
+            <path class="draw part" pathLength="1" id="gearBigPath"/>
+            <circle class="draw" pathLength="1" cx="130" cy="290" r="22"/>
+            <path class="draw" pathLength="1" d="M130 250 V330 M90 290 H170"/>
+          </g>
+          <g id="gearSmall" class="gear">
+            <path class="draw part" pathLength="1" id="gearSmallPath"/>
+            <circle class="draw" pathLength="1" id="gearSmallHub" cx="179" cy="199" r="12"/>
+          </g>
+
+          <!-- callouts -->
+          <g class="callout">
+            <path class="draw" pathLength="1" d="M88 362 L112 402 H210"/>
+            <circle class="pin" cx="88" cy="362" r="4"/>
+            <text class="anno strong" x="116" y="396">01 / DISCOVER</text>
+          </g>
+          <g class="callout">
+            <path class="draw" pathLength="1" d="M300 150 L224 96 H132"/>
+            <circle class="pin" cx="300" cy="150" r="4"/>
+            <text class="anno strong" x="132" y="90">02 / PRIORITIZE</text>
+          </g>
+          <g class="callout">
+            <path class="draw" pathLength="1" d="M404 337 L440 420 H534"/>
+            <circle class="pin" cx="404" cy="337" r="4"/>
+            <text class="anno strong" x="534" y="414" text-anchor="end">03 / SHIP</text>
+          </g>
+        </svg>
+        <figcaption class="spin-hint mono">↻ drag the gear</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="titleblock" aria-label="Drawing title block">
+        <div><dt>Drawn by</dt><dd>B. Mohnot</dd></div>
+        <div><dt>School</dt><dd>BITS Pilani, Goa</dd></div>
+        <div><dt>Degree</dt><dd>B.E. Mech + M.Sc. Physics</dd></div>
+        <div><dt>Status</dt><dd><span class="status-dot" aria-hidden="true"></span>Open to APM / PM roles · 2027</dd></div>
+        <div><dt>Checked by</dt><dd>You →</dd></div>
+      </dl>
+      <div class="stats" id="stats">
+        <div class="stat"><span class="stat-v" data-count="4108">0</span><span class="stat-l">app reviews read by my LLM pipeline</span></div>
+        <div class="stat"><span class="stat-v" data-count="100" data-suffix="k">0</span><span class="stat-l">e-commerce orders queried in SQL</span></div>
+        <div class="stat"><span class="stat-v" data-count="15" data-suffix="+">0</span><span class="stat-l">products torn down at CoinCodeCap</span></div>
+        <div class="stat"><span class="stat-v" data-count="5">0</span><span class="stat-l">projects shipped, all live below</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════ 02 · WORK ═════════════ -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="sec-no mono">§ 02 · SPEC SHEETS</p>
+        <h2 class="h2">Five problems I took apart.</h2>
+        <p class="sec-sub">Open any spec for the problem, what I did, what I found, and a live demo built on the project's real data.</p>
+      </div>
+      <div class="chips" role="toolbar" aria-label="Filter projects" id="filters" data-reveal></div>
+      <div class="specs" id="specs"></div>
+    </div>
+  </section>
+
+  <!-- ═════════════ 03 · EXPERIENCE ═════════════ -->
+  <section class="section alt" id="experience">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="sec-no mono">§ 03 · ASSEMBLY LINE</p>
+        <h2 class="h2">Where the parts were machined.</h2>
+        <p class="sec-sub">Each station shaped how I work. Pick one.</p>
+      </div>
+      <div class="line" data-reveal>
+        <div class="belt" aria-hidden="true"></div>
+        <div class="stations" role="tablist" aria-label="Experience" id="stations"></div>
+      </div>
+      <article class="station-detail" id="stationDetail" role="tabpanel" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <!-- ═════════════ 04 · TOOLKIT ═════════════ -->
+  <section class="section" id="toolkit">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="sec-no mono">§ 04 · BILL OF MATERIALS</p>
+        <h2 class="h2">The toolkit, and where each part was used.</h2>
+        <p class="sec-sub">Every tool links to the project or role where I actually used it.</p>
+      </div>
+      <div class="bom" id="bom" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- ═════════════ 05 · ABOUT ═════════════ -->
+  <section class="section alt" id="about">
+    <div class="wrap about-grid">
+      <div data-reveal>
+        <p class="sec-no mono">§ 05 · THE MECHANISM</p>
+        <h2 class="h2">How I work: three gears, always meshed.</h2>
+        <p class="about-p">I trained to take machines apart: find the failing part, measure it, fix it, test it. Product work turned out to be the same loop with people in it. I'm happiest when a vague question ("why are ratings falling?") becomes a ranked list of fixes with evidence behind each one.</p>
+        <div class="gear-panel" id="gearPanel" aria-live="polite"></div>
+      </div>
+      <div class="gears-wrap" data-reveal>
+        <svg id="gearsSvg" viewBox="0 0 420 380" aria-label="Three meshing gears: Discover, Prioritize, Ship"></svg>
+      </div>
+    </div>
+    <div class="wrap edu" data-reveal>
+      <div class="edu-card">
+        <p class="mono edu-k">EDUCATION</p>
+        <h3 class="h3">BITS Pilani, K K Birla Goa Campus</h3>
+        <p>B.E. Mechanical Engineering + M.Sc. Physics (dual degree) · 2022 – 2027</p>
+        <ul class="pill-row">
+          <li>Probability &amp; Statistics</li><li>Operations Research</li><li>Engineering Optimization</li><li>Quality Control &amp; Reliability</li>
+        </ul>
+      </div>
+      <div class="edu-card">
+        <p class="mono edu-k">COMMUNITY</p>
+        <h3 class="h3">Nirmaan Organization · Volunteer Educator</h3>
+        <p>Taught <b>25+ underprivileged students</b> Math and Science over 9 months, adapting lessons to each student's tracked progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════ 06 · CONTACT ═════════════ -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div data-reveal>
+        <p class="sec-no mono">§ 06 · CHANGE REQUEST</p>
+        <h2 class="h2">Hiring for APM or PM intern roles? Let's talk.</h2>
+        <p class="sec-sub">I reply to every message. The quickest way is email.</p>
+        <div class="contact-links">
+          <button class="clink" id="copyEmail"><span class="mono">EMAIL</span><span>bhavyamohnot@gmail.com</span><span class="cl-act">Copy</span></button>
+          <a class="clink" href="https://www.linkedin.com/in/bhavya-mohnot-52769a217/" target="_blank" rel="noopener"><span class="mono">LINKEDIN</span><span>bhavya-mohnot</span><span class="cl-act">Open ↗</span></a>
+          <a class="clink" href="https://github.com/bhavyamohnot" target="_blank" rel="noopener"><span class="mono">GITHUB</span><span>bhavyamohnot</span><span class="cl-act">Open ↗</span></a>
+          <a class="clink" href="assets/Bhavya_Mohnot_Resume.pdf" target="_blank" rel="noopener"><span class="mono">RÉSUMÉ</span><span>One page, PDF</span><span class="cl-act">Open ↗</span></a>
+        </div>
+      </div>
+      <form class="cr-form" id="crForm" data-reveal novalidate>
+        <div class="cr-head mono"><span>CHANGE REQUEST FORM</span><span id="crNo">CR-0001</span></div>
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Type of request
+          <select name="type">
+            <option>APM / PM role</option><option>Internship</option><option>Project or collaboration</option><option>Just saying hi</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required placeholder="Hi Bhavya, we're hiring for…"></textarea></label>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Submit request →</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Bhavya Mohnot</span>
+    <span class="mono">Drawn by hand in HTML, CSS &amp; JS · press <kbd>Ctrl</kbd> <kbd>K</kbd></span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- Spec modal -->
+<dialog class="modal" id="specModal" aria-labelledby="mTitle">
+  <div class="modal-in" id="modalBody"></div>
+</dialog>
+
+<!-- Command menu -->
+<dialog class="cmdk" id="cmdk" aria-label="Command menu">
+  <div class="cmdk-in">
+    <input id="cmdkInput" placeholder="Type a command or search…" autocomplete="off" aria-label="Search commands" role="combobox" aria-controls="cmdkList" aria-expanded="true">
+    <ul id="cmdkList" role="listbox"></ul>
+    <p class="cmdk-foot mono">↑↓ to move · Enter to run · Esc to close</p>
+  </div>
+</dialog>
+
+<!-- AI twin chat -->
+<button class="chat-fab" data-open-chat aria-label="Ask my AI twin"><span class="dot-live" aria-hidden="true"></span>Ask my AI twin</button>
+<section class="chat" id="chat" aria-label="Ask my AI twin" hidden>
+  <header class="chat-h">
+    <div><b>Bhavya's AI twin</b><span class="mono chat-sub">answers only from my résumé &amp; projects</span></div>
+    <button class="x" id="chatClose" aria-label="Close chat">✕</button>
+  </header>
+  <div class="chat-msgs" id="chatMsgs" aria-live="polite"></div>
+  <div class="chat-sugg" id="chatSugg"></div>
+  <form class="chat-in" id="chatForm">
+    <input id="chatInput" maxlength="500" placeholder="Ask about my projects, skills…" aria-label="Your question" autocomplete="off">
+    <button class="btn btn-primary" type="submit" aria-label="Send">→</button>
+  </form>
+</section>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="scanline" id="scanline" aria-hidden="true"></div>
+
+<noscript><p class="noscript">This portfolio is interactive and needs JavaScript. The <a href="assets/Bhavya_Mohnot_Resume.pdf">résumé PDF</a> has everything in one page.</p></noscript>
+
+<script src="js/content.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

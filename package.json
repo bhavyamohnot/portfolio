@@ -1,0 +1,7 @@
+{
+  "name": "bhavya-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Bhavya Mohnot's portfolio: static site + one Vercel function (api/chat.js)",
+  "engines": { "node": ">=18" }
+}
